@@ -5,12 +5,13 @@ import '../App.css'
 function NewsFeed() {
     return (
       <div>
-          <h1>This is the NEWS FEED!!!!</h1>
+          <h1>News Feed</h1>
           <div className={'PostBox'}>
-              <h2>Would you like to make a post?</h2>
               <PostForm />
           </div>
-
+          <div className={'post-list'}>
+              <h3>here are all the posts?</h3>
+          </div>
       </div>
     );
 }
