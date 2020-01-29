@@ -44,7 +44,7 @@ class PostForm extends React.Component {
 
     render() {
         return (
-            <div class={"jumbotron jumbotron-fluid my-4"}>
+            <div className={"jumbotron jumbotron-fluid my-4"}>
                 <h2>Please enter your Post for everyone!!</h2>
                 <form>
                     <input type={'text'} name={'post'} placeholder={'Please enter your post here'} value={this.state.post} onChange={this.handleInputChange} />

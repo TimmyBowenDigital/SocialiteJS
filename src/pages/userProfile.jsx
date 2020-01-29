@@ -1,15 +1,21 @@
 import React from "react";
 import UserDetails from "../components/userDetails";
+import NewsFeed from "../components/newsFeed";
 
-function UserProfile() {
+class UserProfile extends React.Component {
+    render() {
         return (
             <div>
-                <h1>This is the User Profile!!!!</h1>
+                <h1>Welcome back {this.props.user.userID}</h1>
                 <div>
-                    <UserDetails />
+                    <UserDetails/>
+                </div>
+                <div className={'container'}>
+                    <NewsFeed id={this.props.user.userID}/>
                 </div>
             </div>
         );
+    }
 }
 
 export default UserProfile
